@@ -6,15 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-  <section class="section1">
-    <h1> Drukspil overskrift </h1>
-    <input class="tekstboks" type="text" placeholder="Brugernavn">
-    <button class="videreknap" type="button">Start</button>
-  </section>
+  <h1 id="titleHeader"> Drukspil overskrift </h1>
 
-  <section class="section2">
-    <h1> Drukspil overskrift </h1>
-      <p class="teksttilspiller"> hej her kommer tekst ind</p>
+  <!-- Username selection skærm-->
+  <section class="section1" id="userScreen">
+    <input class="tekstboks" id="usernameInput" type="text" placeholder="Brugernavn">
+    <button class="videreknap" id="nextButtonUser" type="button">Start</button>
+  </section>
+    <!-- Waiting room-->
+    <section class="section2" id="waitingScreen">
+      <p class="ventetekst" id = waitingText> Indsæt ventetekst her </p>
+      <button class="videreknap" id="nextButtonWaiting" type="button">Videre</button>
+    </section>
+  <!--Spil skærm-->
+  <section class="section3" id="gameScreen">
+      <p class="teksttilspiller" id="mainText">  hej her kommer tekst ind</p>
       <button class="sandknap" type="button">Sand knap</button>
       <button class="falskknap" type="button">Falsk knap</button>
 
@@ -84,5 +90,6 @@
                      </div>
 
   </section>
+  <script src = "scripts/Main.js"></script>
 </body>
 </html>
