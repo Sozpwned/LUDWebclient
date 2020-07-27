@@ -21,7 +21,7 @@
   <!--Spil skærm-->
   <section class="section3" id="gameScreen">
       <p class="teksttilspiller" id="mainText">  hej her kommer tekst ind</p>
-      <button class="sandknap" type="button">Sand knap</button>
+      <button class="sandknap" type="button">Sandt knap</button>
       <button class="falskknap" type="button">Falsk knap</button>
 
       <!-- modifierknap -->
@@ -38,9 +38,9 @@
          </div>
 
          <!-- modifierknap -->
-         <button class="modal-button" data-href="#myModal1" data-slide="prev"></button>
+         <button class="modal-button" data-href="#myModal2" data-slide="prev"></button>
 
-            <div id="myModal1" class="modal">
+            <div id="myModal2" class="modal">
 
               <!-- popup content-->
                 <div class="infoknap-content">
@@ -51,9 +51,9 @@
             </div>
 
             <!-- modifierknap -->
-            <button class="modal-button" data-href="#myModal1" data-slide="prev"></button>
+            <button class="modal-button" data-href="#myModal3" data-slide="prev"></button>
 
-               <div id="myModal1" class="modal">
+               <div id="myModal3" class="modal">
 
                  <!-- popup content-->
                    <div class="infoknap-content">
@@ -64,9 +64,9 @@
                </div>
 
                <!-- modifierknap -->
-               <button class="modal-button" data-href="#myModal1" data-slide="prev"></button>
+               <button class="modal-button" data-href="#myModal4" data-slide="prev"></button>
 
-                  <div id="myModal1" class="modal">
+                  <div id="myModal4" class="modal">
 
                     <!-- popup content-->
                       <div class="infoknap-content">
@@ -77,9 +77,9 @@
                   </div>
 
                   <!-- modifierknap -->
-                  <button class="modal-button" data-href="#myModal1" data-slide="prev"></button>
+                  <button class="modal-button" data-href="#myModal5" data-slide="prev"></button>
 
-                     <div id="myModal1" class="modal">
+                     <div id="myModal5" class="modal">
 
                        <!-- popup content-->
                          <div class="infoknap-content">
@@ -89,6 +89,61 @@
 
                      </div>
 
+<style>
+  .modal-button {
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Sit on top */
+    padding-top: 350px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .infoknap-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+    z-index: 99;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+
+.infografi {
+  width:100%;
+  height: auto;
+}
+</style>
   </section>
   <script src = "scripts/Main.js"></script>
 </body>
